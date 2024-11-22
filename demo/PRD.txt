@@ -1,0 +1,90 @@
+@**USERS ENDPOINTS**
+
+############################################################################
+1. Create user (Sign Up) POST v1/signup
+Input: {1. User ID (internal property)
+2. username (Unique)
+3. Email address (Unique)
+4. Password
+5. Confirmed Password}
+
+Output : {"Sign Up successful"\n, "Login Here"}
+
+############################################################################
+
+2. Login in	POST v1/login
+
+Input : {username, password}
+
+Output: {message: "Get Started Here"}
+
+############################################################################
+
+3. Update user profile  PUT/PATCH v1/users/{user_Id}
+Input: {2. username (Unique)
+3. Email address
+4. Password}
+
+Output: {Update successful}
+
+############################################################################
+
+4. Delete user profile  DELETE v1/users/{user_Id}
+
+Input:{username}
+
+############################################################################
+
+**EXPENSES ENDPOINTS**
+
+############################################################################
+
+1. Create an expense POST v1/users/{user_Id}/expenses
+Input: {2. title
+3. category
+4. description
+5. created_at
+6. amount
+}
+
+Output : {Expense Added , data:expense}
+
+############################################################################
+
+2. View all expenses GET v1/users/{user_Id}/expenses
+
+
+############################################################################
+3. View an expense (single expense)	GET v1/users/{user_Id}/expenses/{expense_Id}
+
+
+############################################################################
+
+4. Update an expense	PUT/PATCH v1/users/{user_Id}/{expenses/expense_Id}
+
+
+############################################################################
+
+5. Delete an expense	DELETE v1/users/{user_Id}/{expenses/expense_Id}
+
+
+############################################################################
+
+User properties
+1. User ID (internal property)
+2. username (Unique)
+3. Email address (Unique)
+4. Password
+5. Confirmed password (In memeory)
+
+############################################################################
+Expense Property 
+1. expense_Id (internal property)
+2. title
+3. category
+4. description
+5. created_at
+6. amount
+
+
+############################################################################
